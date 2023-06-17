@@ -15,9 +15,14 @@ flowchart LR
 
     BA(Cookbook Controller) --> BB(Cookbook Service)
     BB --> BC(Cookbook Repository)
-    BC --> BD[DB]
     end
 
+    subgraph Cookbook Database
+        DA(DB)
+    end
+    
     FB --> BA
+    BC --> DA
+
 
 ```

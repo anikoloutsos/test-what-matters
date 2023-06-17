@@ -1,18 +1,23 @@
 # test-what-matters
+
+This project is a study on testing methodologies. 
+
+This project is a cookbook website.
+
 ```mermaid
 flowchart LR
     
-    subgraph Pet Frontend 
-        FA(Pet Component) --> FB(Pet Service)
+    subgraph Cookbook Frontend 
+        FA(Cookbook Component) --> FB(Cookbook Service)
 
     end 
-    subgraph Pet Backend 
+    subgraph Cookbook Backend 
 
-    A(Pet Controller) --> B(Pet Service)
-    B --> C(Pet Repository)
-    C --> D[DB]
+    BA(Cookbook Controller) --> BB(Cookbook Service)
+    BB --> BC(Cookbook Repository)
+    BC --> BD[DB]
     end
 
-    FB --> A
+    FB --> BA
 
 ```
